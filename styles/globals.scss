@@ -1,0 +1,11 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+@mixin SetButton($sizeX) {
+    width: $sizeX;
+    border-radius: 5px;
+    //border: 2px solid #c1cc20;
+    color: #c1cc20;
+}
+
+

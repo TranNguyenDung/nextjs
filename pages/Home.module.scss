@@ -1,0 +1,12 @@
+@import "../styles/globals.scss";
+
+$format_button: 200px;
+// 
+
+.container{
+  background-color: rgb(162, 0, 255);
+}
+
+.button{
+  @include SetButton($format_button);
+}
