@@ -1,0 +1,54 @@
+@use "../styles/mainTemplate" as MT;
+.PissaRuler {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+
+  .banner {
+    // background-color: rgba($color: #000000, $alpha: 0.3);
+
+    // @include MT.section();
+    .bannerCenter {
+      // @include MT.sectionCenter();
+    }
+
+    .bannerleft {
+      //background-color: rgba($color: #ff0, $alpha: 0.9);
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 35%,
+        rgba(0, 212, 255, 1) 100%
+      );
+    }
+    .bannerright {
+      background: linear-gradient(
+        90deg,
+        rgb(228, 176, 8) 0%,
+        rgb(91, 121, 9) 35%,
+        rgb(72, 255, 0) 100%
+      );
+    }
+
+    width: 1440px;
+    height: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .content {
+    width: 100px;
+    height: 200px;
+    background-color: #00f;
+  }
+
+  .features {
+    @include MT.section();
+    .featuresCenter {
+      @include MT.sectionCenter();
+    }
+  }
+}

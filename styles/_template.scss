@@ -1,0 +1,32 @@
+$xsMin: 0px;
+$xsMax: 575.98px;
+$smMin: 576px;
+$smMax: 767.98px;
+$mdMin: 768px;
+$mdMax: 991.98px;
+$lgMin: 992px;
+$lgMax: 1199.98px;
+$xlMin: 1200px;
+$xlMax: 1599.98px;
+$xxlMin: 1600px;
+
+@mixin resetUlLi() {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}
+
+//////////////
+$componentHeight: 32px;
+
+@mixin title() {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
