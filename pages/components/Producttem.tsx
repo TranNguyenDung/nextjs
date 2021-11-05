@@ -50,10 +50,24 @@ const ProductItem: React.FunctionComponent<IProps>=(
                 height={128} 
                 alt={product.name} 
             /> */}
-            <img src={"https://www.vphone24h.vn/" + get(product,"images[0]","")} />
-            <h2>{get(product,"name","")}</h2>
+            {/* <div className={Styles.image}><img src={"https://www.vphone24h.vn/" + get(product,"images[0]","")} /></div> */}
+            <div className={Styles.image}><img src={"https://i.pinimg.com/564x/ac/d4/ff/acd4ff49433dbbaefecdd29093b9e0e2.jpg"} /></div>
+            <h4>{get(product,"name","")}</h4>
             <p>{get(product,"customerPrice","")}</p>
             <p><button>Mua ngay</button></p>
+
+            {/* <div className={Styles.border_gradient}>
+                I have a gradient
+            </div>
+
+            <div className={Styles.border_gradient_purple}>
+                I have a gradient 1
+            </div>
+
+            <div className={Styles.border_gradient_green}>
+                I have a gradient 2
+            </div> */}
+
         </div>
     );
 };

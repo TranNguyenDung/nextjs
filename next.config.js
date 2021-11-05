@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["https://www.vphone24h.vn"],
+    domains: ["https://www.vphone24h.vn/_next/image"],
   },
 };
