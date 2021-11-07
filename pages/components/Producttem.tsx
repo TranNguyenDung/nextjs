@@ -1,4 +1,4 @@
-import React from "react";
+import React,{FC} from "react";
 import Image from 'next/image';
 import Styles from "./ProductItem.module.scss"
 import { IProduct } from "../configs/custum-type";
@@ -16,8 +16,7 @@ interface IProps{
     product : IProduct;
 }
 
-
-const ProductItem: React.FunctionComponent<IProps>=(
+const ProductItem: FC<IProps>=(
     // {name,
     // price,
     // thumbnail,}
@@ -26,7 +25,7 @@ const ProductItem: React.FunctionComponent<IProps>=(
     //const name = "iphone X";
     //const thumbnail = "https://i.pinimg.com/564x/ac/d4/ff/acd4ff49433dbbaefecdd29093b9e0e2.jpg";
     //const price = 12345;
-
+    (product as any).commission;
     return (
         <div className={Styles.productItem}> 
             {/* <Image 

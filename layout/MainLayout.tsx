@@ -1,11 +1,11 @@
-import React from 'react';
+import React,{FC} from 'react';
 import styles from './MainLayout.module.scss'
 import Image from "next/image"
 import classnames from "classnames"
 import { BiAbacus } from "react-icons/bi";
 
 
-const MainLayout: React.FunctionComponent = ({ children }) => {
+const MainLayout: FC = ({ children }) => {
     // console.log("THIS IS " + {machildrenin});
     return <div className={styles.mainLayout}>
         <div className={styles.header}>

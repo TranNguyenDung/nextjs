@@ -6,6 +6,8 @@ import Styles from  "./products.module.scss";
 import {get} from "lodash";
 import { IProduct } from "./configs/custum-type";
 
+
+
 interface IProps{}
 
 const Products:NextPage<IProps> = () =>{

@@ -1,11 +1,11 @@
-import React from 'react';
+import React,{FC} from 'react';
 import styles from "./CmsLayout.module.scss";
 
 interface IProps{
     main : React.ReactNode;
 }
 
-const CmsLayout: React.FunctionComponent<IProps> = ({main}) => {
+const CmsLayout: FC<IProps> = ({main}) => {
     console.log("THIS IS " + {main});
     return <div className={styles.CmsLayout}>
             <div className={styles.header}>header Content</div>
