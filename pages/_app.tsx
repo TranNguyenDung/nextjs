@@ -1,6 +1,6 @@
 import '../styles/globals.scss'
-import type { pageProps } from 'next/app'
-import { wrapper, AppProps } from './redux/store'
+import type { AppProps } from 'next/app'
+import { wrapper } from '../redux/store'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
