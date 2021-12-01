@@ -1,0 +1,66 @@
+.container{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    // height: 100%;
+    width: 100%;
+    // min-height: 800px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    // background-image: linear-gradient(rgb(255, 0, 242), rgb(0, 255, 85));
+    .block{
+        width: 500px;
+        height: 300px;
+        display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        //align-items: center;
+        background-color: yellow;
+        border-radius: 5px;
+        //box-shadow: 2px 2px rgba($color: #000000, $alpha: 0.2);
+        .blockChild{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(red, yellow);
+            .lableLogin{
+                width: 100%;
+                font-size: 40px;
+                font-weight: 800;
+                display: flex;
+                justify-content: center;
+            }
+            .lableEmail{
+                font-weight: 800;
+            }
+            .inputEmail{
+                width: 60%;
+                height: 20px;
+                margin-bottom: 5px;
+            }
+
+            .lablePassword{
+                font-weight: 800;
+            }
+            .inputPassword{
+                width: 60%;
+                height: 20px;
+                margin-bottom: 5px;
+            }
+
+            .btnLogin{
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                background-color: rgba(9, 86, 173, 0.2);
+            }
+        }
+    }
+}

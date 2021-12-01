@@ -2,7 +2,7 @@ import axios from "axios";
 import { NextPage } from "next";
 import { useState } from "react";
 import MainLayout from "../layout/MainLayout";
-import {Storage} from "./storage";
+import {Storage} from "../libs/storage";
 interface IProps {}
 
 const Contact: NextPage<IProps> = () =>{
