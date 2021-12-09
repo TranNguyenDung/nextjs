@@ -16,10 +16,11 @@ const Login: NextPage<IProps> = () => {
     const [password, setPassword] = useState('');
 
     const clickLogin = () =>{ 
-        console.log(name + ":"+ email + ":"+ password);
+        console.log(email + ":"+ password);
         AuthAPI.login(email,password).then((resp)=>{
+            console.log("-------------------------");
             console.log(resp.data);
-            Storage.Cookie.set("token", "Bearer" + resp.data);
+            Storage.Cookie.set("token", "Bearer " + resp.data);
         }).catch((err)=>{
             console.log(err);
         })

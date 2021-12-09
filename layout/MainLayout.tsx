@@ -19,7 +19,7 @@ const MainLayout: FC = ({ children }) => {
                         unoptimized={true}/>
                     </div>            
                     <form>
-                        <input type="text" name="name"  className={styles.Search} />
+                        <input type="text" name="name" className={styles.Search} />
                     </form>
                     <BiAbacus color="#FAF" size={32} />
             </div>
